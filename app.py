@@ -16,7 +16,7 @@ class CandidaturaApp:
         self.root.geometry(WINDOW_SIZE)
         self.root.configure(bg=COLORS['bg'])
         
-        self.repo = CandidaturaRepository()# dados
+        self.repo = CandidaturaRepository() # dados
         
         aplicar_estilos()
         self._montar_interface() # componentes visuais

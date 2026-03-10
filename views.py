@@ -6,6 +6,17 @@ from config import COLORS, STATUS_OPTIONS, EDIT_WINDOW_SIZE
 
 def aplicar_estilos():
     style = ttk.Style()
+
+    style.theme_use('clam')
+
+    style.configure(
+        'TCombobox',
+        fieldbackground=COLORS['entry_bg'],
+        background=COLORS['entry_bg'],
+        foreground=COLORS['entry_fg'],
+        arrowcolor=COLORS['fg']
+    )
+
     style.theme_use('clam')
     style.configure('TCombobox',
                     fieldbackground=COLORS['entry_bg'],
@@ -30,6 +41,11 @@ def aplicar_estilos():
                     foreground=COLORS['tree_heading_fg'],
                     relief="flat")
     style.map("Treeview.Heading", background=[('active', '#4a4a4a')])
+    #fix combobox
+    style.map(
+        'TCombobox',
+        fieldbackground=[('readonly', COLORS['entry_bg'])],
+        foreground=[('readonly', COLORS['entry_fg'])])
 
 # formulario de cadastro
 class FormularioCadastro(tk.Frame):
