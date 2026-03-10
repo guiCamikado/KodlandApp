@@ -1,1 +1,4 @@
 candidaturas.db
+
+dist/
+__pycache__
