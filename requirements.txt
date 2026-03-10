@@ -1,1 +1,1 @@
-
+# Esse programa não utiliza nenhuma biblioteca que necessite instalação apenas tkinter e sqlite
