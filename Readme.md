@@ -19,3 +19,7 @@ A ideia é utilizar banco de dados SQLite com interface Tkinter.
 ## Como executar a aplicação
 
 Apenas executar o arquivo main.py com o console no local da pasta
+
+OU
+
+Executar o arquivo main.exe que se encontra na pasta ´´´dist´´´
